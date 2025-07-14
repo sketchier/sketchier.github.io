@@ -70,7 +70,7 @@ chrome.prototype = {
         var e, b, a, g;
         this.points.push([f, c]);
         this.context.lineWidth = BRUSH_SIZE;
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 				this.context.lineCap = "round";
 				//end add
 				this.context.strokeStyle = "rgba(" + COLOR[0] + ", " + COLOR[1] + ", " + COLOR[2] + ", " + 0.1 * BRUSH_PRESSURE + ")";
@@ -78,7 +78,7 @@ chrome.prototype = {
         this.context.moveTo(this.prevMouseX, this.prevMouseY);
         this.context.lineTo(f, c);
         this.context.stroke();
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 				this.context.lineWidth = 1;
 				//end add
         for (e = 0; e < this.points.length; e++) {
@@ -123,7 +123,7 @@ fur.prototype = {
         var e, b, a, g;
         this.points.push([f, c]);
         this.context.lineWidth = BRUSH_SIZE;
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 				this.context.lineCap = "round";
 				//end add
 			  this.context.strokeStyle = "rgba(" + COLOR[0] + ", " + COLOR[1] + ", " + COLOR[2] + ", " + 0.1 * BRUSH_PRESSURE + ")";
@@ -168,7 +168,7 @@ grid.prototype = {
         g = Math.round(d / 100) * 100;
         c = (a - f) * 10;
         b = (g - d) * 10;
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 				this.context.lineCap = "round";
 				//end add
         this.context.lineWidth = BRUSH_SIZE;
@@ -203,7 +203,7 @@ longfur.prototype = {
         this.points.push([g, c]);
         this.context.lineWidth = BRUSH_SIZE;
 			  this.context.strokeStyle = "rgba(" + COLOR[0] + ", " + COLOR[1] + ", " + COLOR[2] + ", " + 0.1 * BRUSH_PRESSURE + ")";
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 				this.context.lineCap = "round";
 				//end add
         for (f = 0; f < this.points.length; f++) {
@@ -254,7 +254,7 @@ ribbon.prototype = {
         function d() {
             var e;
             this.context.lineWidth = BRUSH_SIZE;
-						//added 05/16/17 BertrandtheHealer
+						//added 05/16/17 Max Davy
 				    this.context.lineCap = "round";
 				    //end add
 					  this.context.strokeStyle = "rgba(" + COLOR[0] + ", " + COLOR[1] + ", " + COLOR[2] + ", " + 0.1 * BRUSH_PRESSURE + ")";
@@ -308,9 +308,9 @@ shaded.prototype = {
         this.prevMouseY = a
     },
     stroke: function(f, c) {
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 			  this.context.lineWidth = BRUSH_SIZE;
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 				this.context.lineCap = "round";
 				//end add
 				this.context.strokeStyle = "rgba(" + COLOR[0] + ", " + COLOR[1] + ", " + COLOR[2] + ", " + 0.5 * BRUSH_PRESSURE + ")";
@@ -357,8 +357,8 @@ simple.prototype = {
         this.prevMouseY = a
     },
     stroke: function(b, a) {
-        this.context.lineWidth = BRUSH_SIZE;//added 05/16/17 BertrandtheHealer
-				//added 05/16/17 BertrandtheHealer
+        this.context.lineWidth = BRUSH_SIZE;//added 05/16/17 Max Davy
+				//added 05/16/17 Max Davy
 			  this.context.strokeStyle = "rgb(" + COLOR[0] + ", " + COLOR[1] + ", " + COLOR[2] + ")";
 				this.context.fillStyle = "rgb(" + COLOR[0] + ", " + COLOR[1] + ", " + COLOR[2] + ")";
 				
@@ -399,7 +399,7 @@ sketchy.prototype = {
         var e, b, a, g;
         this.points.push([f, c]);
         this.context.lineWidth = BRUSH_SIZE;
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 				this.context.lineCap = "round";
 				//end add
 				this.context.strokeStyle = "rgba(" + COLOR[0] + ", " + COLOR[1] + ", " + COLOR[2] + ", " + 0.1 * BRUSH_PRESSURE + ")";
@@ -407,7 +407,7 @@ sketchy.prototype = {
         this.context.moveTo(this.prevMouseX, this.prevMouseY);
         this.context.lineTo(f, c);
         this.context.stroke();
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 				this.context.lineWidth = 1;
 				//end add
         for (e = 0; e < this.points.length; e++) {
@@ -452,7 +452,7 @@ squares.prototype = {
         e = Math.cos(g) * b - Math.sin(g) * a;
         c = Math.sin(g) * b + Math.cos(g) * a;
         this.context.lineWidth = BRUSH_SIZE;
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 				this.context.lineCap = "round";
 				//end add
         this.context.fillStyle = "rgba(" + BACKGROUND_COLOR[0] + ", " + BACKGROUND_COLOR[1] + ", " + BACKGROUND_COLOR[2] + ", " + BRUSH_PRESSURE + ")";
@@ -495,7 +495,7 @@ web.prototype = {
         var e, b, a, g;
         this.points.push([f, c]);
         this.context.lineWidth = BRUSH_SIZE;
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 				this.context.lineCap = "round";
 				//end add
 				this.context.strokeStyle = "rgba(" + COLOR[0] + ", " + COLOR[1] + ", " + COLOR[2] + ", " + 0.5 * BRUSH_PRESSURE + ")";
@@ -521,7 +521,7 @@ web.prototype = {
     },
     strokeEnd: function() {}
 };
-//added 05/16/17 BertrandtheHealer
+//added 05/16/17 Max Davy
 function rainbow(a) {
     this.init(a)
 }
@@ -547,7 +547,7 @@ rainbow.prototype = {
 				this.hsl[0] = this.hsl[0]+1;
 			  this.context.strokeStyle = "hsl(" + this.hsl[0] + ", " + this.hsl[1] + ", " + this.hsl[2] + ")";
 				this.context.fillStyle = "hsl(" + this.hsl[0] + ", " + this.hsl[1] + ", " + this.hsl[2] + ")";
-				//added 05/16/17 BertrandtheHealer
+				//added 05/16/17 Max Davy
 				this.context.lineCap = "round";
 				//end add
         this.context.beginPath();
@@ -1103,9 +1103,9 @@ function Palette() {
         j, h, k, g, o;
     e = document.createElement("canvas");
     e.width = 250;
-    e.height = 250;//changed from 250 05/01/17 BertrandtheHealer
+    e.height = 250;//changed from 250 05/01/17 Max Davy
     b = e.width / 2;
-    a = 250 / 2;//changed to 250 from e.height 05/01/17 BertrandtheHealer
+    a = 250 / 2;//changed to 250 from e.height 05/01/17 Max Davy
     d = e.getContext("2d");
     d.lineWidth = 1;
     for (j = 0; j < m; j++) {
@@ -1136,11 +1136,11 @@ Menu.prototype = {
     selector: null,
     save: null,
     clear: null,
-    pointerSize: null,//added 05/01/17 BertrandtheHealer
-    resetButton: null,//added 05/01/17 BertrandtheHealer
-    files: null,//added 05/01/17 BertrandtheHealer
-    fileButton: null,//added 05/02/17 BertrandtheHealer
-    Dialog: null,//added 05/01/17 BertrandtheHealer
+    pointerSize: null,//added 05/01/17 Max Davy
+    resetButton: null,//added 05/01/17 Max Davy
+    files: null,//added 05/01/17 Max Davy
+    fileButton: null,//added 05/02/17 Max Davy
+    Dialog: null,//added 05/01/17 Max Davy
     about: null,
     init: function() {
         var b, c, d, e = 17,
@@ -1161,7 +1161,7 @@ Menu.prototype = {
         this.foregroundColor.style.cursor = "pointer";
         this.foregroundColor.width = e;
         this.foregroundColor.height = a;
-        this.foregroundColor.title = "Change Foreground Color (or press 'shift')";//added 05/01/17 BertrandtheHealer
+        this.foregroundColor.title = "Change Foreground Color (or press 'shift')";//added 05/01/17 Max Davy
         this.container.appendChild(this.foregroundColor);
         this.setForegroundColor(COLOR);
         c = document.createTextNode(" ");
@@ -1171,12 +1171,12 @@ Menu.prototype = {
         this.backgroundColor.style.cursor = "pointer";
         this.backgroundColor.width = e;
         this.backgroundColor.height = a;
-        this.backgroundColor.title = "Change Background Color";//added 05/01/17 BertrandtheHealer
+        this.backgroundColor.title = "Change Background Color";//added 05/01/17 Max Davy
         this.container.appendChild(this.backgroundColor);
         this.setBackgroundColor(BACKGROUND_COLOR);
         c = document.createTextNode(" ");
         this.container.appendChild(c);
-        //begin add 05/01/17 BertrandtheHealer
+        //begin add 05/01/17 Max Davy
         this.fileButton = document.createElement("span");
         this.fileButton.className = "button";
         this.fileButton.id = "fileButton";
@@ -1205,21 +1205,21 @@ Menu.prototype = {
         this.reduceBrush.className = "button";
         this.reduceBrush.id = "reduceBrush";
         this.reduceBrush.innerHTML = "<";
-        this.reduceBrush.title = "Reduce brush size";//added 05/01/17 BertrandtheHealer
+        this.reduceBrush.title = "Reduce brush size";//added 05/01/17 Max Davy
         this.container.appendChild(this.reduceBrush);
 				//brush size indicator
         this.pointerSize = document.createElement("span");
         this.pointerSize.className = "button";
         this.pointerSize.id = "pointerSize";
         this.pointerSize.innerHTML = "1px";
-        this.pointerSize.title = "Brush Size (change using up and down arrow keys)";//added 05/01/17 BertrandtheHealer
+        this.pointerSize.title = "Brush Size (change using up and down arrow keys)";//added 05/01/17 Max Davy
         this.container.appendChild(this.pointerSize);
 				//increase brush size
 				this.increaseBrush = document.createElement("span");
         this.increaseBrush.className = "button";
         this.increaseBrush.id = "increaseBrush";
         this.increaseBrush.innerHTML = ">";
-        this.increaseBrush.title = "Increase brush size";//added 05/01/17 BertrandtheHealer
+        this.increaseBrush.title = "Increase brush size";//added 05/01/17 Max Davy
         this.container.appendChild(this.increaseBrush);
         c = document.createTextNode(" ");
         this.container.appendChild(c);
@@ -1238,30 +1238,30 @@ Menu.prototype = {
 					}
 					this.selector.appendChild(b)
         }
-        this.selector.title = "Change Brush Styles";//added 05/01/17 BertrandtheHealer
+        this.selector.title = "Change Brush Styles";//added 05/01/17 Max Davy
         this.container.appendChild(this.selector);
         d = document.createTextNode(" | ");
         this.container.appendChild(d);
         this.save = document.createElement("span");
         this.save.className = "button";
         this.save.innerHTML = "<u style='color:white'>S</u>ave";
-        this.save.title = "Save Canvas (or press 's')";//added 05/01/17 BertrandtheHealer
+        this.save.title = "Save Canvas (or press 's')";//added 05/01/17 Max Davy
         this.container.appendChild(this.save);
         c = document.createTextNode(" ");
         this.container.appendChild(c);
         this.clear = document.createElement("Clear");
         this.clear.className = "button";
         this.clear.innerHTML = "<u style='color:white'>C</u>lear";
-        this.clear.title = "Clear Canvas (or press 'delete')";//added 05/01/17 BertrandtheHealer
+        this.clear.title = "Clear Canvas (or press 'delete')";//added 05/01/17 Max Davy
         this.container.appendChild(this.clear);
-        //begin add 05/01/17 BertrandtheHealer
+        //begin add 05/01/17 Max Davy
 			  c = document.createTextNode(" ");
         this.container.appendChild(c);
 		    this.resetButton = document.createElement("span");
         this.resetButton.className = "button";
 			  this.resetButton.id = "resetButton";
         this.resetButton.innerHTML = "<u style='color:white'>R</u>eset";
-			  this.resetButton.title = "Reset Colors and Brush Size (or press 'r')";//added 05/01/17 BertrandtheHealer
+			  this.resetButton.title = "Reset Colors and Brush Size (or press 'r')";//added 05/01/17 Max Davy
         if (IOS) {
 					this.resetButton.style.visibility = "hidden";
 					this.resetButton.style.display = "none";
@@ -1319,26 +1319,26 @@ About.prototype = {
         this.container.appendChild(a);
         b = document.createElement("p");
         b.style.textAlign = "center";
-        b.innerHTML = '<strong>SKETCHY</strong> Version ' + REV + ' by <a href="https://github.com/BertrandtheHealer" target="_blank">BertrandtheHealer</a></br>an improved version of <strong>HARMONY</strong> by <a href="http://twitter.com/mrdoob" target="_blank">Mr.doob</a>';//added 05/01/17 BertrandtheHealer
+        b.innerHTML = '<strong>SKETCHY</strong> Version ' + REV + ' by <a href="https://github.com/Max Davy" target="_blank">Max Davy</a></br>an improved version of <strong>HARMONY</strong> by <a href="http://twitter.com/mrdoob" target="_blank">Mr.doob</a>';//added 05/01/17 Max Davy
         a.appendChild(b);
 				
-        b = document.createElement("hr");//edited 05/01/17 BertrandtheHealer
-        a.appendChild(b);//edited 05/01/17 BertrandtheHealer
+        b = document.createElement("hr");//edited 05/01/17 Max Davy
+        a.appendChild(b);//edited 05/01/17 Max Davy
         b = document.createElement("p");
         b.style.textAlign = "center";
-        b.innerHTML = 'Shortcuts: </br><span class="key" onclick="increaseBrush();">UP</span>: increase brush size</br><span class="key" onclick="decreaseBrush();">DOWN</span>: decrease brush size</br><span class="key">LEFT</span> default brush size<br /><span class="key">SHIFT</span>: open foreground color picker<br /><span class="key" onclick="moveMenu();">TAB</span>: move menu out of the way<br /><span class="key">S</span>: download image<br /><span class="key">R</span>: reset brush<br /><span class="key">O</span>: upload background image<br /><span class="key">BACKSPACE</span> or <span class="key">C</span>: clear canvas<br /><span class="key">ESC</span>: close about window/color selector<br /><span class="key">CTRL+CLICK</span>: set brush color from image<br /><span class="key">SCROLL</span>: change brush size<br />Drag <span class="key">\u22EE</span>s to move menu<br /><br/><a onclick="writeBackgroundData();" style="cursor:pointer;"><u>Brush Examples</u></a>';//changed to reflect code additions/changes - 05/01/17 BertrandtheHealer, 04/07/18 BertrandtheHealer
+        b.innerHTML = 'Shortcuts: </br><span class="key" onclick="increaseBrush();">UP</span>: increase brush size</br><span class="key" onclick="decreaseBrush();">DOWN</span>: decrease brush size</br><span class="key">LEFT</span> default brush size<br /><span class="key">SHIFT</span>: open foreground color picker<br /><span class="key" onclick="moveMenu();">TAB</span>: move menu out of the way<br /><span class="key">S</span>: download image<br /><span class="key">R</span>: reset brush<br /><span class="key">O</span>: upload background image<br /><span class="key">BACKSPACE</span> or <span class="key">C</span>: clear canvas<br /><span class="key">ESC</span>: close about window/color selector<br /><span class="key">CTRL+CLICK</span>: set brush color from image<br /><span class="key">SCROLL</span>: change brush size<br />Drag <span class="key">\u22EE</span>s to move menu<br /><br/><a onclick="writeBackgroundData();" style="cursor:pointer;"><u>Brush Examples</u></a>';//changed to reflect code additions/changes - 05/01/17 Max Davy, 04/07/18 Max Davy
         a.appendChild(b);
-        b = document.createElement("hr");//edited 05/01/17 BertrandtheHealer
-        a.appendChild(b);//edited 05/01/17 BertrandtheHealer
+        b = document.createElement("hr");//edited 05/01/17 Max Davy
+        a.appendChild(b);//edited 05/01/17 Max Davy
         b = document.createElement("p");
         b.style.textAlign = "center";
-        b.innerHTML = '<a href="http://mrdoob.com/projects/harmony/" target="_blank">Original App</a> | <a href="https://github.com/sketchier/sketchier.github.io" target="_blank">Source Code</a>';//edited 05/01/17 BertrandtheHealer
+        b.innerHTML = '<a href="http://mrdoob.com/projects/harmony/" target="_blank">Original App</a> | <a href="https://github.com/sketchier/sketchier.github.io" target="_blank">Source Code</a>';//edited 05/01/17 Max Davy
         a.appendChild(b);
         b = document.createElement("hr");
         a.appendChild(b);
         b = document.createElement("p");
 				b.style.textAlign = "center";
-        b.innerHTML = "Please support Mr.doob:";//changed 05/01/17 BertrandtheHealer
+        b.innerHTML = "Please support Mr.doob:";//changed 05/01/17 Max Davy
         a.appendChild(b);
         b = document.createElement("p");
         b.style.textAlign = "center";
@@ -1427,18 +1427,18 @@ function init() {
     backgroundColorSelector.addEventListener("change", onBackgroundColorSelectorChange, false);
     container.appendChild(backgroundColorSelector.container);
     menu = new Menu();
-    if (!IOS && !android) {//added 05/01/17 BertrandtheHealer
+    if (!IOS && !android) {//added 05/01/17 Max Davy
       //in safari on ios, click events are generated on touchend
       menu.foregroundColor.addEventListener("click", onMenuForegroundColor, false);
       menu.backgroundColor.addEventListener("click", onMenuBackgroundColor, false);
       menu.save.addEventListener("click", onMenuSave, false);
       menu.clear.addEventListener("click", onMenuClear, false);
       menu.about.addEventListener("click", onMenuAbout, false);
-      menu.pointerSize.addEventListener("click", onMenuPointerSize, false);//added 05/01/17 BertrandtheHealer
-      menu.resetButton.addEventListener("click", onMenuReset, false);//added 05/01/17 BertrandtheHealer
-      menu.fileButton.addEventListener("click", onMenuFile, false);//added 05/01/17 BertrandtheHealer
-			menu.increaseBrush.addEventListener("click", increaseBrush, false)//added 05/16/17 BertrandtheHealer
-			menu.reduceBrush.addEventListener("click", decreaseBrush, false)//added 05/16/17 BertrandtheHealer
+      menu.pointerSize.addEventListener("click", onMenuPointerSize, false);//added 05/01/17 Max Davy
+      menu.resetButton.addEventListener("click", onMenuReset, false);//added 05/01/17 Max Davy
+      menu.fileButton.addEventListener("click", onMenuFile, false);//added 05/01/17 Max Davy
+			menu.increaseBrush.addEventListener("click", increaseBrush, false)//added 05/16/17 Max Davy
+			menu.reduceBrush.addEventListener("click", decreaseBrush, false)//added 05/16/17 Max Davy
     }
     menu.foregroundColor.addEventListener("touchend", onMenuForegroundColor, false);
     menu.backgroundColor.addEventListener("touchend", onMenuBackgroundColor, false);
@@ -1447,9 +1447,9 @@ function init() {
     menu.about.addEventListener("touchend", onMenuAbout, false);
     menu.pointerSize.addEventListener("touchend", onMenuPointerSize, false);
     menu.resetButton.addEventListener("touchend", onMenuReset, false);
-    menu.fileButton.addEventListener("touchend", onMenuFile, false);//added 05/01/17 BertrandtheHealer
-		menu.increaseBrush.addEventListener("touchend", increaseBrush, false)//added 05/16/17 BertrandtheHealer
-		menu.reduceBrush.addEventListener("touchend", decreaseBrush, false)//added 05/16/17 BertrandtheHealer
+    menu.fileButton.addEventListener("touchend", onMenuFile, false);//added 05/01/17 Max Davy
+		menu.increaseBrush.addEventListener("touchend", increaseBrush, false)//added 05/16/17 Max Davy
+		menu.reduceBrush.addEventListener("touchend", decreaseBrush, false)//added 05/16/17 Max Davy
     menu.selector.addEventListener("change", onMenuSelectorChange, false);
     menu.files.addEventListener('change', handleFileSelect, false);
     menu.container.addEventListener("mouseover", onMenuMouseOver, false);
@@ -1478,7 +1478,7 @@ function init() {
 					BRUSH_SIZE = localStorage.brushSize;
 					setBrushSize(BRUSH_SIZE);
 				}
-        document.body.style.backgroundImage = localStorage.bgimage;//added 05/03/17 BertrandtheHealer
+        document.body.style.backgroundImage = localStorage.bgimage;//added 05/03/17 Max Davy
     }
     foregroundColorSelector.setColor(COLOR);
 		if (!document.body.style.backgroundImage) {
@@ -1556,11 +1556,11 @@ function onWindowResize() {
     about.container.style.top = ((SCREEN_HEIGHT - about.container.offsetHeight) / 2) + "px";
 }
 
-function increaseBrush() {//added 05/01/17 BertrandtheHealer
+function increaseBrush() {//added 05/01/17 Max Davy
 	setBrushSize(+BRUSH_SIZE + +1);
 }
 
-function decreaseBrush() {//added 05/01/17 BertrandtheHealer
+function decreaseBrush() {//added 05/01/17 Max Davy
   setBrushSize(+BRUSH_SIZE - +1);
 }
 
@@ -1575,37 +1575,37 @@ function onWindowKeyDown(a) {
             foregroundColorSelector.container.style.top = mouseY - 125 + "px";
             foregroundColorSelector.container.style.visibility = "visible";
             break;
-        case 17://ctrl key - changed from 18(alt key) 04/07/18 BertrandtheHealer
+        case 17://ctrl key - changed from 18(alt key) 04/07/18 Max Davy
             altKeyIsDown = true;
             break;
-        case 40://down arrow - changed from 'd' 05/01/16 BertrandtheHealer
+        case 40://down arrow - changed from 'd' 05/01/16 Max Davy
             decreaseBrush();
             break;
-        case 38://up arrow - changed from 'f' 05/01/16 BertrandtheHealer
+        case 38://up arrow - changed from 'f' 05/01/16 Max Davy
 				  increaseBrush();
           break
-        case 37://left arrow - added 05/01/16 BertrandtheHealer
+        case 37://left arrow - added 05/01/16 Max Davy
           setBrushSize(1);
           break
-        case 8://delete key pressed - added by BertrandtheHealer 05/01/17
+        case 8://delete key pressed - added by Max Davy 05/01/17
           onMenuClear();//promt the user to clear canvas
           break
-        case 82://r key pressed: reset pointer color - added by BertrandtheHealer 05/01/17
+        case 82://r key pressed: reset pointer color - added by Max Davy 05/01/17
           onMenuReset();
           break
-        case 27://esc key pressed: reset pointer color - added by BertrandtheHealer 05/01/17
+        case 27://esc key pressed: reset pointer color - added by Max Davy 05/01/17
           cleanPopUps();
           break
-        case 79://o key pressed: load background image- added by BertrandtheHealer 05/01/17
+        case 79://o key pressed: load background image- added by Max Davy 05/01/17
           onMenuFile();
           break
-        case 83://s key pressed: save image- added by BertrandtheHealer 05/01/17
+        case 83://s key pressed: save image- added by Max Davy 05/01/17
 	        onMenuSave();
           break
-        case 9://tab key press: move menu - 05/06/17 BertrandtheHealer
+        case 9://tab key press: move menu - 05/06/17 Max Davy
 	        moveMenu();
           break
-			  case 67:// c key pressed: switch clickToDraw - 05/17/17 BertrandtheHealer
+			  case 67:// c key pressed: switch clickToDraw - 05/17/17 Max Davy
 				  clickToDraw = !clickToDraw;
 					onMenuClear();
 					break
@@ -1615,14 +1615,14 @@ function onWindowKeyDown(a) {
     }
 }
 
-//added 05/16/17 BertrandtheHealer
+//added 05/16/17 Max Davy
 function setBrushSize(pixels){
 	if (pixels < 1) {
 		BRUSH_SIZE = 1;
-		document.getElementById("pointerSize").innerHTML = "1px";//added 05/01/17 BertrandtheHealer
+		document.getElementById("pointerSize").innerHTML = "1px";//added 05/01/17 Max Davy
 	}else{
 		BRUSH_SIZE=pixels;
-	  document.getElementById("pointerSize").innerHTML = pixels+"px";//added 05/01/17 BertrandtheHealer
+	  document.getElementById("pointerSize").innerHTML = pixels+"px";//added 05/01/17 Max Davy
 	}
 	if (STORAGE){
 		localStorage.brushSize = BRUSH_SIZE;
@@ -1644,7 +1644,7 @@ function onWindowKeyUp(event) {
             shiftKeyIsDown = false;
             foregroundColorSelector.container.style.visibility = "hidden";
             break;
-        case 17://ctrl key, changed from 18 (alt key) 04/07/18 BertrandtheHealer
+        case 17://ctrl key, changed from 18 (alt key) 04/07/18 Max Davy
             altKeyIsDown = false;
             break;
         case 82:
@@ -1689,7 +1689,7 @@ function onBackgroundColorSelectorChange(a) {
         localStorage.background_color_red = BACKGROUND_COLOR[0];
         localStorage.background_color_green = BACKGROUND_COLOR[1];
         localStorage.background_color_blue = BACKGROUND_COLOR[2];
-				localStorage.bgimage = document.body.style.backgroundImage;//added 05/03/17 BertrandtheHealer
+				localStorage.bgimage = document.body.style.backgroundImage;//added 05/03/17 Max Davy
     }
 }
 
@@ -1724,7 +1724,7 @@ function onMenuSelectorChange() {
     brush.destroy();
     brush = eval("new " + BRUSHES[menu.selector.selectedIndex] + "(context)");
     window.location.hash = BRUSHES[menu.selector.selectedIndex];
-    menu.selector.blur(); //lose focus so more keypress events can be accepted - BertrandtheHealer 05/01/17
+    menu.selector.blur(); //lose focus so more keypress events can be accepted - Max Davy 05/01/17
 }
 
 function onMenuMouseOver() {
@@ -1773,7 +1773,7 @@ function onMenuClear() {
 			if (STORAGE) {
       saveToLocalStorage();
 			}
-		  onMenuSelectorChange();//hopefully will fix ios bug 05/05/17 BertrandtheHealer
+		  onMenuSelectorChange();//hopefully will fix ios bug 05/05/17 Max Davy
 		//}
 }
 
@@ -1783,7 +1783,7 @@ function onMenuAbout() {
     about.show()
 }
 
-function onMenuPointerSize() {//added 05/01/17 BertrandtheHealer
+function onMenuPointerSize() {//added 05/01/17 Max Davy
   if (IOS) {
     alert("Click 'UP' to increase size and 'DOWN' to decrease.");
     onMenuAbout();
@@ -1793,7 +1793,7 @@ function onMenuPointerSize() {//added 05/01/17 BertrandtheHealer
   }  
 }
 
-function onMenuReset(alert) {//added 05/01/17 BertrandtheHealer	completely rewritten 05/18/18 BertrandtheHealer
+function onMenuReset(alert) {//added 05/01/17 Max Davy	completely rewritten 05/18/18 Max Davy
   if (!(alert == true)) {
     if (!confirm("Reset brush and background? This cannot be undone.")) {
       return
@@ -1842,11 +1842,11 @@ function onMenuReset(alert) {//added 05/01/17 BertrandtheHealer	completely rewri
 		//init();
 	}
 
-function onMenuFile() {//added 05/02/17 BertrandtheHealer
+function onMenuFile() {//added 05/02/17 Max Davy
   menu.files.click();
 }
 
-function handleFileSelect() {//added 05/02/17 BertrandtheHealer
+function handleFileSelect() {//added 05/02/17 Max Davy
     var files = this.files;
     // If no files were selected, or no FileReader support, return
     if (!window.FileReader) {
@@ -1865,7 +1865,7 @@ function handleFileSelect() {//added 05/02/17 BertrandtheHealer
     reader.onloadend = function(){
       // When loaded, set image data as background of page
       document.body.style.backgroundImage = "url(" + this.result + ")";
-      if (STORAGE) {//added 05/03/17 BertrandtheHealer
+      if (STORAGE) {//added 05/03/17 Max Davy
         localStorage.bgimage = document.body.style.backgroundImage;
       }
       document.body.style.backgroundColor = "rgba(0,0,0,0)";
@@ -1937,7 +1937,7 @@ function onCanvasTouchEnd(a) {
 
 function saveToLocalStorage() {
   localStorage.canvas = canvas.toDataURL("image/png");
-	localStorage.bgimage = document.body.style.backgroundImage;//added 05/03/17 BertrandtheHealer
+	localStorage.bgimage = document.body.style.backgroundImage;//added 05/03/17 Max Davy
 }
 
 function flatten() {
@@ -1946,7 +1946,7 @@ function flatten() {
   var a = flattenCanvas.getContext("2d");
   a.fillStyle = "rgb(" + BACKGROUND_COLOR[0] + ", " + BACKGROUND_COLOR[1] + ", " + BACKGROUND_COLOR[2] + ")";
   a.fillRect(0, 0, canvas.width, canvas.height);
-  //begin add 05/03/17 BertrandtheHealer
+  //begin add 05/03/17 Max Davy
   a.drawImage(img, 0, 0, SCREEN_WIDTH, (SCREEN_WIDTH*img.height)/img.width);//draw resized background image
   a.drawImage(canvas, 0, 0);
   //end add
